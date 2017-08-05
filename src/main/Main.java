@@ -76,7 +76,7 @@ public class Main extends Application {
         primaryStage.show();
 
         // -- below line is for testing without reader.!!!
-        loadStudentWindow("B01A7F7A");
+        //loadStudentWindow("B01A7F7A");
     }
 
     private Student loadStudentWindow(String studentId){
