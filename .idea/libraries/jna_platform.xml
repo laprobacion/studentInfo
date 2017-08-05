@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jna-platform">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ufr-mf-examples-java-master-1341c0c361abad715a741297453dde9f92ff24ec/uFCoderSimplest/lib/jna-platform.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ufr-mf-examples-java-master-1341c0c361abad715a741297453dde9f92ff24ec/uFCoderSimplest/lib/jna.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

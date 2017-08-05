@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TitledPane?>
+<?import java.lang.String?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@main/screen/bootstrap2.css" fx:controller="main.controller.StudentInfoController">
+   <children>
+
+       <TitledPane collapsible="false" prefHeight="400.0" prefWidth="600.0" styleClass="primary" text="       Student Information">
+
+       </TitledPane>
+       <ImageView layoutX="5.0" layoutY="8.0" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@main/screen/studentinfo.png" />
+           </image>
+       </ImageView>
+
+       <Label layoutX="50.0" layoutY="62.0" text="First Name:">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label fx:id="firstNamelbl" layoutX="160.0" layoutY="56.0" text="first name text">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Label layoutX="50.0" layoutY="102.0" text="Last Name:">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label fx:id="lastNamelbl" layoutX="160.0" layoutY="96.0" text="last name text">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Label layoutX="50.0" layoutY="148.0" text="Age:">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label fx:id="agelbl" layoutX="158" layoutY="140.0" text="100">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Label layoutX="50.0" layoutY="187.0" text="Gender:">
+       <font>
+           <Font size="20.0" />
+       </font>
+        </Label>
+       <Label fx:id="genderlbl" layoutX="158" layoutY="179.0" text="Gender text">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Label layoutX="50.0" layoutY="230.0" text="Contact:">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label fx:id="contactlbl" layoutX="158" layoutY="223.0" text="123456789">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Label layoutX="50.0" layoutY="275.0" text="Email:">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label fx:id="emaillbl" layoutX="158" layoutY="267.0" text="test@test.com">
+           <font>
+               <Font size="28.0" />
+           </font>
+       </Label>
+
+       <Button mnemonicParsing="false" text="Back" layoutX="50.0" layoutY="330" onAction="#closeWindow">
+       </Button>
+
+
+       <Button mnemonicParsing="false" text="" layoutX="575.0" layoutY="7" onAction="#closeWindow">
+           <styleClass>
+               <String fx:value="roundred"/>
+           </styleClass>
+       </Button>
+   </children>
+</AnchorPane>

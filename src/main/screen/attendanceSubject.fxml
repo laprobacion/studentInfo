@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane  xmlns="http://javafx.com/javafx/8.0.131"
+            stylesheets="@main/screen/bootstrap2.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.AttendanceSubjectController">
+    <children>
+
+        <TitledPane fx:id="titleWindow" collapsible="false" prefHeight="400.0" prefWidth="600.0" styleClass="primary" text="       Attendance">
+
+        </TitledPane>
+        <ImageView layoutX="6.0" layoutY="10.0" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@main/screen/checkin.png" />
+            </image>
+        </ImageView>
+
+        <TableView fx:id="tableView" GridPane.columnIndex="0"
+                   GridPane.rowIndex="1" layoutX="180.0" layoutY="50.0" minHeight="340" maxHeight="340">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Date" fx:id="date"/>
+            </columns>
+        </TableView>
+        <Button mnemonicParsing="false" text="Back" layoutX="50.0" layoutY="330" onAction="#closeWindow">
+        </Button>
+        <Button mnemonicParsing="false" text="" layoutX="575.0" layoutY="7" onAction="#closeWindow">
+            <styleClass>
+                <String fx:value="roundred"/>
+            </styleClass>
+        </Button>
+    </children>
+</AnchorPane>
+

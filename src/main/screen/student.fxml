@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TitledPane?>
+<?import java.lang.String?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.131" stylesheets="@main/screen/bootstrap2.css"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.StudentController">
+   <children>
+
+
+    <TitledPane collapsible="false" prefHeight="400.0" prefWidth="600.0" styleClass="primary" text="       Student">
+
+    </TitledPane>
+       <ImageView layoutX="6.0" layoutY="8.0" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@main/screen/studentinfo.png" />
+           </image>
+       </ImageView>
+
+   <Label layoutX="50.0" layoutY="112.0" text="First Name:">
+       <font>
+           <Font size="20.0" />
+       </font>
+   </Label>
+   <Label fx:id="firstNamelbl" layoutX="160.0" layoutY="106.0" text="Label">
+       <font>
+           <Font size="28.0" />
+       </font>
+   </Label>
+
+   <Label layoutX="50.0" layoutY="142.0" text="Last Name:">
+       <font>
+           <Font size="20.0" />
+       </font>
+   </Label>
+   <Label fx:id="lastNamelbl" layoutX="160.0" layoutY="136.0" text="Label">
+       <font>
+           <Font size="28.0" />
+       </font>
+   </Label>
+       <Button mnemonicParsing="false" layoutX="50.0" layoutY="200.0" text="Information" contentDisplay="TOP"
+               fx:id="studentInfoButton" onAction="#showStudentInfo">
+           <graphic>
+               <ImageView  fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/studentinfo.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+       <Button mnemonicParsing="false" layoutX="150.0" layoutY="200.0" text="  Schedule  " contentDisplay="TOP"
+               fx:id="scheduleButton" onAction="#showSchedule" minWidth="500">
+           <graphic>
+               <ImageView  fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/schedule.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+       <Button mnemonicParsing="false" layoutX="250.0" layoutY="200.0" text="   Grades   " contentDisplay="TOP"
+               fx:id="gradeButton" onAction="#showGrade">
+           <graphic>
+               <ImageView  fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/grades.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+       <Button mnemonicParsing="false" layoutX="345.0" layoutY="200.0" text="Attendance" contentDisplay="TOP"
+               fx:id="attendanceButton" onAction="#showAttendance">
+           <graphic>
+               <ImageView  fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/attendance.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+
+       <Button mnemonicParsing="false" layoutX="250.0" layoutY="30.0" text="In" contentDisplay="TOP"
+               fx:id="inButton" onAction="#checkIn">
+           <graphic>
+               <ImageView  fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/checkin.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+       <Button mnemonicParsing="false" layoutX="300.0" layoutY="30.0" text="Out" contentDisplay="TOP"
+               fx:id="outButton" onAction="#checkOut">
+           <graphic>
+               <ImageView  fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@main/screen/checkout.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </Button>
+
+   <Button mnemonicParsing="false" text="Back" layoutX="50.0" layoutY="330" onAction="#closeWindow">
+   </Button>
+
+   <Button mnemonicParsing="false" text="" layoutX="575.0" layoutY="7" onAction="#closeWindow">
+       <styleClass>
+           <String fx:value="roundred"/>
+       </styleClass>
+   </Button>
+   </children>
+</AnchorPane>
